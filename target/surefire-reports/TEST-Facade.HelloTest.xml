@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\marku\.jdks\corretto-11.0.16.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\marku\AppData\Local\Temp\surefire8134722853874752449\surefirebooter15744188686255796746.jar C:\Users\marku\AppData\Local\Temp\surefire8134722853874752449 2023-02-01T15-33-00_053-jvmRun1 surefire9256845929171658466tmp surefire_012883392567925761593tmp"/>
+    <property name="sun.java.command" value="C:\Users\marku\AppData\Local\Temp\surefire1770958754041716492\surefirebooter1768305435555226564.jar C:\Users\marku\AppData\Local\Temp\surefire1770958754041716492 2023-02-01T16-00-45_366-jvmRun1 surefire9951609813645686228tmp surefire_013713813721411791060tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\marku\OneDrive\Documents\3SEMESTER DATAMATIKER\3semester_TDD\target\test-classes;C:\Users\marku\OneDrive\Documents\3SEMESTER DATAMATIKER\3semester_TDD\target\classes;C:\Users\marku\.m2\repository\mysql\mysql-connector-java\8.0.26\mysql-connector-java-8.0.26.jar;C:\Users\marku\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;C:\Users\marku\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\marku\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\marku\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\marku\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\marku\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\marku\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\marku\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\marku\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\marku\AppData\Local\Temp\surefire8134722853874752449\surefirebooter15744188686255796746.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\marku\AppData\Local\Temp\surefire1770958754041716492\surefirebooter1768305435555226564.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.16.1+9-LTS"/>
@@ -61,9 +61,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testSeveralNames" classname="Facade.HelloTest" time="0"/>
+  <testcase name="testSeveralNames" classname="Facade.HelloTest" time="0.001"/>
   <testcase name="testNameIsNull" classname="Facade.HelloTest" time="0"/>
   <testcase name="hello" classname="Facade.HelloTest" time="0"/>
   <testcase name="oxfordCommatest" classname="Facade.HelloTest" time="0"/>
-  <testcase name="testIfNameIsShout" classname="Facade.HelloTest" time="0.001"/>
+  <testcase name="testIfNameIsShout" classname="Facade.HelloTest" time="0"/>
 </testsuite>
