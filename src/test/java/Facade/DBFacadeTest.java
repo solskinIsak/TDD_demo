@@ -50,15 +50,14 @@ class DBFacadeTest {
     }
 
     @Test
-    public void test() {
+    public void test()throws SQLException {
         System.out.println("Testing database conncetion... ");
         String  sql = "SELECT * FROM startcode_test.usertable";
         try (ResultSet set = con.prepareStatement(sql).executeQuery()){
             set.next();
             String name = set.getString("fname");
             assertEquals("Hans", name);
-            } catch (SQLException throwables) {
-            throwables.printStackTrace();
+
         }
     }
-    }
+}
