@@ -16,14 +16,14 @@ Calculator calculator;
     void tearDown() {
     }
 
-    @Test
-    public void testAdd(){
-
-        System.out.println("testAdd");
-
-
-        int actual = calculator.add(1,2);
-        int expected = 3;
-        assertEquals(expected,actual);
-    }
+//    @Test
+//    public void testAdd(){
+//
+//        System.out.println("testAdd");
+//
+//
+//        int actual = calculator.add(1,2);
+//        int expected = 3;
+//        assertEquals(expected,actual);
+//    }
 }

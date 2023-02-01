@@ -12,7 +12,7 @@ public class HelloTest {
     Hello hello;
     @BeforeEach
     void setUp() {
-        Hello hello = new Hello();
+        hello = new Hello();
     }
 
     @AfterEach
@@ -20,35 +20,38 @@ public class HelloTest {
     }
 
     @Test
+    public void hello(){
+        String actual = hello.sayHello("Isak");
+        String expected = "Hello, Isak.";
+        assertEquals(expected,actual);
+    }
+
+
+    @Test
     public void testNameIsNull(){
-        System.out.println("Method if name is null");
-        Hello hello = new Hello();
         String actual = hello.sayHello(null);
-        String expected = "Hello my friend";
+        String expected = "Hello, my friend";
         assertEquals(expected,actual);
     }
     @Test
     public void testIfNameIsShout(){
         System.out.println("Method if name is UPPERCASE");
-        Hello hello = new Hello();
         String actual = hello.sayHello("ISAK");
-        String expected = "HELLO ISAK";
+        String expected = "HELLO, ISAK!";
         assertEquals(expected,actual);
     }
     @Test
     public void testSeveralNames(){
         System.out.println("Method if theres more than 1 name");
         String[] names = new String[]{"Isak", "Kasi"};
-        Hello hello = new Hello();
         String actual = hello.sayHello(names);
-        String expected = "Hello, Isak and Kasi!";
+        String expected = "Hello, Isak and Kasi.";
         assertEquals(expected,actual);
     }
     @Test
     public void oxfordCommatest(){
         System.out.println("Method if theres more than 1 name");
         String[] names = new String[]{"Isak", "Kasi", "Saki"};
-        Hello hello = new Hello();
         String actual = hello.sayHello(names);
         String expected = "Hello, Isak, Kasi, and Saki.";
         assertEquals(expected,actual);
