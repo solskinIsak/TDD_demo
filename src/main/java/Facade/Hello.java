@@ -26,7 +26,7 @@ public class Hello {
         if (name instanceof String) {
             String myString = (String) name;
             String allcaps = myString.toUpperCase();
-            if (myString == null) return "Hello, my friend.";
+            if (myString == "") return "Hello, my friend.";
 
             if (name.equals(allcaps)) return "HELLO, " + myString + "!";
             return "Hello, " + myString + ".";
