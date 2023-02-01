@@ -6,6 +6,8 @@ import java.util.Arrays;
 public class Hello {
 
     public String sayHello(Object name) {
+        if(name == null)return "Hello, my friend.";
+
         if (name instanceof String[]) {
             String returnString = "Hello, ";
             String[] names = (String[]) name;
@@ -26,7 +28,7 @@ public class Hello {
         if (name instanceof String) {
             String myString = (String) name;
             String allcaps = myString.toUpperCase();
-            if (myString == "") return "Hello, my friend.";
+            if (myString.equals("")) return "Hello, my friend.";
 
             if (name.equals(allcaps)) return "HELLO, " + myString + "!";
             return "Hello, " + myString + ".";

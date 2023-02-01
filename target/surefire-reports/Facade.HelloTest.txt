@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Facade.HelloTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! - in Facade.HelloTest
-testNameIsNull  Time elapsed: 0.006 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <Hello, my friend> but was: <null>
-	at Facade.HelloTest.testNameIsNull(HelloTest.java:34)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in Facade.HelloTest

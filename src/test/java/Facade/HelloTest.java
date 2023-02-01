@@ -30,7 +30,7 @@ public class HelloTest {
     @Test
     public void testNameIsNull(){
         String actual = hello.sayHello(null);
-        String expected = "Hello, my friend";
+        String expected = "Hello, my friend.";
         assertEquals(expected,actual);
     }
     @Test
