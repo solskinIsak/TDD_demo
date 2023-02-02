@@ -34,7 +34,7 @@ class DBFacadeTest {
             ps.setString(2, "Hansen");
             ps.setString(3, "Hemmelig123");
             ps.setString(4, "40404040");
-            ps.setString(5,"Rolighedsvej 3");
+            ps.setString(5, "Rolighedsvej 3");
             ps.executeUpdate();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -50,14 +50,47 @@ class DBFacadeTest {
     }
 
     @Test
-    public void test()throws SQLException {
-        System.out.println("Testing database conncetion... ");
-        String  sql = "SELECT * FROM startcode_test.usertable";
-        try (ResultSet set = con.prepareStatement(sql).executeQuery()){
+    public void test() throws SQLException {
+        System.out.println("Testing database connection... ");
+        String sql = "SELECT * FROM startcode_test.usertable";
+        try (ResultSet set = con.prepareStatement(sql).executeQuery()) {
             set.next();
             String name = set.getString("fname");
             assertEquals("Hans", name);
 
         }
     }
+
+    @Test
+    public void testshowdetail() throws SQLException {
+        System.out.println("Testing database connection... showing phone... ");
+        String sql = "SELECT * FROM startcode_test.usertable";
+        try (ResultSet set = con.prepareStatement(sql).executeQuery()) {
+            set.next();
+            String phone = set.getString("phone");
+            assertEquals("40404040", phone);
+
+
+        }
+    }
+
+//    @Test
+//    public void testalldetails() throws SQLException{
+//        System.out.println("Testing database connection... showing specific details... ");
+//        User user = null;
+//        String SQL = "SELECT * FROM startcode_test.usertable where fname = 'Hans'";
+//        try (ResultSet set = con.prepareStatement(SQL).executeQuery()){
+//            set.next();
+//            String name = set.getString("fname");
+//            String address = set.getString("address");
+//            String phone = set.getString("phone");
+//            User actualinfo = new User(name,address,phone);
+//            User expectedinfo = new User("Hans","Rolighedsvej 3","40404040");
+//            user = new User(name,address,phone);
+//            assertEquals(expectedinfo,actualinfo);
+//
+//        }
+//
+//
+//}
 }
