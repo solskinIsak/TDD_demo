@@ -74,23 +74,23 @@ class DBFacadeTest {
         }
     }
 
-//    @Test
-//    public void testalldetails() throws SQLException{
-//        System.out.println("Testing database connection... showing specific details... ");
-//        User user = null;
-//        String SQL = "SELECT * FROM startcode_test.usertable where fname = 'Hans'";
-//        try (ResultSet set = con.prepareStatement(SQL).executeQuery()){
-//            set.next();
-//            String name = set.getString("fname");
-//            String address = set.getString("address");
-//            String phone = set.getString("phone");
-//            User actualinfo = new User(name,address,phone);
-//            User expectedinfo = new User("Hans","Rolighedsvej 3","40404040");
-//            user = new User(name,address,phone);
-//            assertEquals(expectedinfo,actualinfo);
-//
-//        }
-//
-//
-//}
+    @Test
+    public void testalldetails() throws SQLException{
+        System.out.println("Testing database connection... showing specific details... ");
+        User user = null;
+        String SQL = "SELECT * FROM startcode_test.usertable where fname = 'Hans'";
+        try (ResultSet set = con.prepareStatement(SQL).executeQuery()){
+            set.next();
+            String name = set.getString("fname");
+            String address = set.getString("address");
+            String phone = set.getString("phone");
+            User actualinfo = new User(name,address,phone);
+            User expectedinfo = new User("Hans","Rolighedsvej 3","40404040");
+
+            assertEquals(expectedinfo,actualinfo);
+
+        }
+
+
+}
 }
